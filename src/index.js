@@ -1,17 +1,18 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+//La forma vieja (CommonJS)
+//const React = require("react")
+//const ReactDOM = require("react-dom")
+//const App = require("./App")
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//La forma nueva (ES6)
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from "./App"
+import "./estilos.css"
+//JSX 
+//const Componente = <p>Hola Mundo en Variable</p>
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//App()
+//<App/>
+//<App></App>
+
+ReactDOM.render( <App/> , document.getElementById("root"))
