@@ -1,21 +1,50 @@
 import React from "react"
+import Header from "./Header"
+import Footer from "./Footer"
+import Main from "./Main"
 
-const App = function(){
+/* 
+class App extends React.Component {
+
+    
+    //constructor(){}
+    //componentDidMount(){}
+    //shouldComponentUpdate(){}
+    //componentWillUnmount(){} 
+   
+
+    //El metodo render se ejecuta cuando un componente entra en pantalla o cuando se actualiza
+    render(){
+        return(
+            <>
+                <header>
+                    <h1>Titulo de mi Pagina</h1>
+                </header>
+                <footer>
+                    <p>&copy; Copyright 2020</p>
+                </footer>
+            </>
+        )
+    }
+
+}
+*/
+
+
+
+const App = () => {
     return(
         <>
-            <header>
-                <h1>Titulo de mi Pagina</h1>
-            </header>
-            <footer>
-                <p>&copy; Copyright 2020</p>
-            </footer>
+            <Header 
+                saludo="Hola k ase?"  
+                edad={30}  
+                hacerClick={ ()=>{ console.log("Click!") /**return NADA */ }} 
+            />
+            <Main/>
+            <Footer/>
         </>
     )
-}
+} 
 
-//Si alguien llega a hacer un import de este archivo "App.js", lo que va a obtener a cambio por defecto es la variable App
 
-//COMMONJS
-//module.exports = App
-//ES6
 export default App
