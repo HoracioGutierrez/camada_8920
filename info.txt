@@ -53,3 +53,45 @@ let btn = document.querySelector("button")
 btn.addEventListener("click",function(){})
 
 btn.onclick = function(){}
+
+
+
+
+
+/* class App extends React.Component {
+
+    constructor(){
+        super()
+        this.state = {
+            saludo : "Hola soy estado",
+            edad : 30
+        }
+    }
+
+    //componentDidMount(){}
+    //componentWillUnmount(){}
+    //shouldComponentUpdate(){}
+    
+    //El metodo render se ejecuta cuando un componente entra en pantalla o cuando se actualiza
+    render(){
+
+        return(
+            <>
+                <Header 
+                    saludo={this.state.saludo} 
+                    edad={30}  
+                    hacerClick={ ()=>{ console.log("Click!")  }} 
+                />
+            
+                <header>
+                    <h1>{this.state.saludo}</h1>
+                </header>
+                <footer>
+                    <p>&copy; Copyright 2020</p>
+                </footer>
+            </>
+        )
+    }
+
+}
+ */
